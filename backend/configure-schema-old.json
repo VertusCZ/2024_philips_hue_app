@@ -1,0 +1,170 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "hueBridge": {
+      "type": "object",
+      "properties": {
+        "ipAddress": {
+          "type": "string",
+          "format": "ipv4"
+        },
+        "username": {
+          "type": "string"
+        }
+      },
+      "required": ["ipAddress", "username"]
+    },
+    "externalApis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "pollingInterval": {
+            "type": "integer"
+          },
+          "dataType": {
+            "type": "string",
+            "enum": ["json"]
+          }
+        },
+        "required": ["name", "url", "dataType"]
+      }
+    },
+    "inputData": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "dataMapping": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "automationRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["externalData", "time"]
+              },
+              "apiName": {
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              },
+              "condition": {
+                "type": "string",
+                "enum": ["equals", "notEquals", "greaterThan", "lessThan"]
+              },
+              "value": {
+                "type": ["string", "number"]
+              },
+              "timeWindow": {
+                "type": "object",
+                "properties": {
+                  "inCurrentTime": {
+                    "type": "boolean"
+                  },
+                  "timeLimit": {
+                    "type": "integer"
+                  }
+                },
+                "required": ["inCurrentTime", "timeLimit"]
+              }
+            },
+            "required": ["type", "condition", "value"]
+          },
+          "action": {
+            "type": "object",
+            "properties": {
+              "deviceType": {
+                "type": "string",
+                "enum": ["light", "plug"]
+              },
+              "deviceId": {
+                "type": "string"
+              },
+              "state": {
+                "type": "object",
+                "properties": {
+                  "on": {
+                    "type": "boolean"
+                  },
+                  "bri": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "hue": {
+                    "type": "integer"
+                  }
+                },
+                "required": ["on"]
+              }
+            },
+            "required": ["deviceType", "deviceId", "state"]
+          }
+        },
+        "required": ["id", "trigger", "action"]
+      }
+    },
+    "groups": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "localTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "devices": {
+            "type": "object",
+            "properties": {
+              "lights": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "plugs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "localTime"]
+      }
+    }
+  },
+  "required": ["hueBridge", "externalApis", "inputData", "automationRules", "groups"]
+}

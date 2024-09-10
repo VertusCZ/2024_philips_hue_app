@@ -1,0 +1,47 @@
+{
+  "hueBridge": {
+    "ipAddress": "192.168.1.2",
+    "username": "7IXh-UlA6VQ0cutRjQb6wDI1USYa7iXHZfVwKj0l"
+  },
+  "externalApis": [
+    {
+      "name": "WeatherApi",
+      "url": "https://api.openweathermap.org/data/2.5/weather?q=Ostrava&appid=2c8ce0f495b381164aba7730836722b6",
+      "pollingInterval": 60000,
+      "dataType": "json"
+    }
+  ],
+  "inputData": {
+    "WeatherApi": {
+      "dataMapping": {
+        "weatherCondition": "weather[0].main"
+      }
+    }
+  },
+  "automationRules": [
+    {
+      "id": "1",
+      "trigger": {
+        "type": "externalData",
+        "apiName": "WeatherApi",
+        "key": "weatherCondition",
+        "condition": "equals",
+        "value": "Clouds",
+        "timeWindow": {
+          "inCurrentTime": true,
+          "timeLimit": 120000
+        }
+      },
+      "action": {
+        "deviceType": "light",
+        "deviceId": "1",
+        "state": {
+          "on": true,
+          "sat": 204,
+          "bri": 254,
+          "hue": 45000
+        }
+      }
+    }
+  ]
+}

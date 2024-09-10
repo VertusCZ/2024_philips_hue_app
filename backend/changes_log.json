@@ -1,0 +1,665 @@
+[
+  {
+    "timestamp": "2024-02-22T17:25:02.037Z",
+    "path": "weather[0].main",
+    "value": "Rain"
+  },
+  {
+    "timestamp": "2024-02-22T17:25:02.060Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-22T17:25:09.191Z",
+    "path": "weather[0].main",
+    "value": "Rain"
+  },
+  {
+    "timestamp": "2024-02-22T17:25:09.217Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-22T17:25:16.340Z",
+    "path": "weather[0].main",
+    "value": "Rain"
+  },
+  {
+    "timestamp": "2024-02-22T17:25:16.363Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T18:43:07.264Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T18:43:07.297Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T18:43:14.411Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T18:44:01.778Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T18:44:01.792Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T18:44:08.888Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T18:44:08.901Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T18:44:16.010Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T18:44:16.020Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:25:36.308Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:25:36.318Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:25:43.422Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:25:43.431Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:29:49.183Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:29:49.194Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:29:56.303Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:29:56.313Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:30:41.373Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:30:41.385Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:30:41.398Z",
+    "path": "data.EUR.value",
+    "value": 0.0395883045
+  },
+  {
+    "timestamp": "2024-02-26T20:30:48.482Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:30:48.494Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:30:51.594Z",
+    "path": "data.EUR.value",
+    "value": 0.0395883045
+  },
+  {
+    "timestamp": "2024-02-26T20:30:55.605Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-26T20:30:55.640Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-26T20:30:58.739Z",
+    "path": "data.EUR.value",
+    "value": 0.0395883045
+  },
+  {
+    "timestamp": "2024-02-27T11:33:07.481Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-27T11:33:07.513Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-27T11:33:07.528Z",
+    "path": "data.EUR.value",
+    "value": 0.0394517239
+  },
+  {
+    "timestamp": "2024-02-27T11:33:14.611Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-27T11:33:14.661Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-27T11:33:19.772Z",
+    "path": "data.EUR.value",
+    "value": 0.0394517239
+  },
+  {
+    "timestamp": "2024-02-27T11:33:21.763Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-27T11:33:21.772Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-27T11:33:28.873Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-27T11:33:28.910Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-27T11:33:28.944Z",
+    "path": "data.EUR.value",
+    "value": 0.0394517239
+  },
+  {
+    "timestamp": "2024-02-28T18:11:52.876Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-28T18:11:52.911Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-28T18:11:53.004Z",
+    "path": "data.EUR.value",
+    "value": 0.0395014014
+  },
+  {
+    "timestamp": "2024-02-28T18:11:53.026Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-28T18:12:00.016Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-28T18:12:00.025Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-28T18:12:02.239Z",
+    "path": "data.EUR.value",
+    "value": 0.0395014014
+  },
+  {
+    "timestamp": "2024-02-28T18:12:02.249Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-28T18:12:07.122Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-02-28T18:12:07.132Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-02-28T18:12:11.488Z",
+    "path": "data.EUR.value",
+    "value": 0.0395014014
+  },
+  {
+    "timestamp": "2024-02-28T18:12:11.497Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.091Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.188Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.199Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.212Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.817Z",
+    "path": "data.EUR.value",
+    "value": 0.0394838212
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.836Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.847Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.861Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:32.878Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:39.326Z",
+    "path": "weather[0].main",
+    "value": "Clouds"
+  },
+  {
+    "timestamp": "2024-03-07T20:03:39.336Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "1",
+      "newState": {
+        "on": true,
+        "bri": 90,
+        "hue": 46920
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:39.350Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:39.364Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:42.193Z",
+    "path": "data.EUR.value",
+    "value": 0.0394838212
+  },
+  {
+    "timestamp": "2024-03-07T20:03:42.203Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:42.217Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:42.231Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "",
+      "newState": {
+        "on": true,
+        "bri": 0,
+        "hue": 0
+      },
+      "response": 200
+    }
+  },
+  {
+    "timestamp": "2024-03-07T20:03:42.246Z",
+    "changes": {
+      "action": "executeAction",
+      "deviceId": "2",
+      "newState": {
+        "on": true
+      },
+      "response": 200
+    }
+  }
+]

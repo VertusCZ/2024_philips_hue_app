@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 18.282,
+    "lat": 49.8346
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 281.81,
+    "feels_like": 277.88,
+    "temp_min": 280.47,
+    "temp_max": 283.7,
+    "pressure": 999,
+    "humidity": 81
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 8.75,
+    "deg": 220
+  },
+  "clouds": {
+    "all": 75
+  },
+  "dt": 1704372544,
+  "sys": {
+    "type": 2,
+    "id": 47767,
+    "country": "CZ",
+    "sunrise": 1704350658,
+    "sunset": 1704380300
+  },
+  "timezone": 3600,
+  "id": 3068799,
+  "name": "Ostrava",
+  "cod": 200
+}

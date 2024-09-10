@@ -1,0 +1,93 @@
+{
+  "hueBridge": {
+    "ipAddress": "192.168.1.2",
+    "username": "7IXh-UlA6VQ0cutRjQb6wDI1USYa7iXHZfVwKj0l"
+  },
+  "externalApis": [
+    {
+      "name": "WeatherApi",
+      "url": "https://api.openweathermap.org/data/2.5/weather?q=Ostrava&appid=2c8ce0f495b381164aba7730836722b6",
+      "pollingInterval": 7000,
+      "dataType": "json"
+    },
+    {
+      "name": "CurrencyApi",
+      "url": "https://api.currencyapi.com/v3/latest?apikey=cur_live_zyTosi4xhLCyQMMIrRl4rk3HXBOpTtnFz7MmvEwb&currencies=EUR%2CUSD%2CCAD&base_currency=CZK",
+      "pollingInterval": 9000,
+      "dataType": "json"
+    }
+  ],
+  "inputData": {
+    "WeatherApi": {
+      "dataMapping": {
+        "weatherCondition": "weather[0].main"
+      }
+    },
+    "CurrencyApi": {
+      "dataMapping": {
+        "exchangeRate": "data.EUR.value"
+      }
+    }
+  },
+  "automationRules": [
+    {
+      "id": "1",
+      "trigger": {
+        "type": "externalData",
+        "apiName": "WeatherApi",
+        "key": "weatherCondition",
+        "condition": "equals",
+        "value": "Clouds",
+        "timeWindow": {
+          "inCurrentTime": true,
+          "timeLimit": 120000
+        }
+      },
+      "action": {
+        "deviceType": "light",
+        "deviceId": "1",
+        "state": {
+          "on": true,
+          "bri": 90,
+          "hue": 46920
+        }
+      }
+    },
+    {
+      "id": "2",
+      "trigger": {
+        "type": "externalData",
+        "apiName": "CurrencyApi",
+        "key": "exchangeRate",
+        "condition": "lessThan",
+        "value": "0.05"
+      },
+      "action": {
+        "deviceType": "plug",
+        "deviceId": "2",
+        "state": {
+          "on": true
+        }
+      }
+    }
+  ],
+  "groups": {
+    "1": {
+      "name": "Bakalarka",
+      "localTime": "2023-11-25T13:13:37",
+      "devices": {
+        "lights": ["1", "2"],
+        "plugs": ["3"]
+      },
+      "type": "room"
+    },
+    "2": {
+      "name": "Bakalarka 2",
+      "localTime": "2023-11-25T13:13:37",
+      "devices": {
+        "lights": ["4"]
+      },
+      "type": "living room"
+    }
+  }
+}

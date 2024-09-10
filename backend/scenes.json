@@ -1,0 +1,248 @@
+{
+  "lights": {
+    "1": {
+      "state": {
+        "on": true,
+        "bri": 98,
+        "hue": 8417,
+        "sat": 140,
+        "effect": "none",
+        "xy": [
+          0.4573,
+          0.4100
+        ],
+        "ct": 366,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2023-11-09T17:28:10"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 1",
+      "modelid": "LCA008",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 1680,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "tableshade",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:0c:fb:fb:fd-0b",
+      "swversion": "1.104.2",
+      "swconfigid": "A83C0B3B",
+      "productid": "Philips-LCA008-1-A67ECLv1"
+    },
+    "2": {
+      "state": {
+        "on": true,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2023-11-09T17:33:37"
+      },
+      "type": "On/Off plug-in unit",
+      "name": "Hue smart plug 1",
+      "modelid": "LOM008",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue smart plug",
+      "capabilities": {
+        "certified": true,
+        "control": {},
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "plug",
+        "function": "functional",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "powerfail",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:0c:a8:4a:0f-0b",
+      "swversion": "1.104.2",
+      "swconfigid": "68F827B5",
+      "productid": "Philips-LOM008-1-SPPIUv2"
+    }
+  },
+  "groups": {
+    "81": {
+      "name": "Bakalarka",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "sensors": [],
+      "type": "Room",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": true,
+        "bri": 98,
+        "hue": 8417,
+        "sat": 140,
+        "effect": "none",
+        "xy": [
+          0.4573,
+          0.4100
+        ],
+        "ct": 366,
+        "alert": "select",
+        "colormode": "hs"
+      }
+    }
+  },
+  "config": {
+    "name": "Hue Bridge",
+    "zigbeechannel": 25,
+    "bridgeid": "ECB5FAFFFE907893",
+    "mac": "ec:b5:fa:90:78:93",
+    "dhcp": true,
+    "ipaddress": "192.168.1.12",
+    "netmask": "255.255.255.0",
+    "gateway": "192.168.1.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2023-11-25T13:25:34",
+    "localtime": "2023-11-25T14:25:34",
+    "timezone": "Europe/Prague",
+    "modelid": "BSB002",
+    "datastoreversion": "163",
+    "swversion": "1960149090",
+    "apiversion": "1.60.0",
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": "2023-11-24T20:26:46",
+      "bridge": {
+        "state": "readytoinstall",
+        "lastinstall": "2023-11-03T13:38:27"
+      },
+      "state": "allreadytoinstall",
+      "autoinstall": {
+        "updatetime": "T14:00:00",
+        "on": true
+      }
+    },
+    "linkbutton": false,
+    "portalservices": true,
+    "analyticsconsent": true,
+    "portalconnection": "disconnected",
+    "portalstate": {
+      "signedon": false,
+      "incoming": false,
+      "outgoing": false,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "connected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": false,
+    "replacesbridgeid": null,
+    "starterkitid": "",
+    "backup": {
+      "status": "idle",
+      "errorcode": 0
+    },
+    "whitelist": {
+      "b81d367d-4280-4e49-960b-8ee64ce3d803": {
+        "last use date": "2023-11-01T20:30:37",
+        "create date": "2023-11-01T19:48:36",
+        "name": "Hue#SM-A526B"
+      },
+      "7IXh-UlA6VQ0cutRjQb6wDI1USYa7iXHZfVwKj0l": {
+        "last use date": "2023-11-25T13:25:34",
+        "create date": "2023-11-01T19:55:42",
+        "name": "my_hue_app#bakalarka"
+      },
+      "fd5f7bcd-c67e-4af7-9aa6-5c12e6f7aaf2": {
+        "last use date": "2023-11-01T20:31:59",
+        "create date": "2023-11-01T20:31:33",
+        "name": "Hue#SM-A526B"
+      },
+      "349e4b25-fb4c-4d70-a48b-d656236bd115": {
+        "last use date": "2023-11-01T21:51:40",
+        "create date": "2023-11-01T20:32:12",
+        "name": "Hue#SM-A526B"
+      },
+      "a5a9bc00-692a-4be6-81a1-d28316476cc0": {
+        "last use date": "2023-11-25T13:25:33",
+        "create date": "2023-11-01T21:52:23",
+        "name": "Hue#SM-A526B"
+      }
+    }
+  },
+  "schedules": {},
+  "scenes": {},
+  "rules": {},
+  "sensors": {
+    "1": {
+      "state": {
+        "daylight": null,
+        "lastupdated": "none"
+      },
+      "config": {
+        "on": true,
+        "configured": false,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Signify Netherlands B.V.",
+      "swversion": "1.0"
+    }
+  },
+  "resourcelinks": {}
+}

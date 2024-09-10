@@ -1,0 +1,203 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "hueBridge": {
+      "description": "Configuration for connecting to the Philips Hue Bridge.",
+      "type": "object",
+      "properties": {
+        "ipAddress": {
+          "description": "IPv4 address of the Philips Hue Bridge.",
+          "type": "string",
+          "format": "ipv4"
+        },
+        "username": {
+          "description": "Username for authentication with the Philips Hue Bridge.",
+          "type": "string"
+        }
+      },
+      "required": ["ipAddress", "username"]
+    },
+    "externalApis": {
+      "description": "Configuration of external APIs used by the application to obtain data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Identifying name of the API.",
+            "type": "string"
+          },
+          "url": {
+            "description": "URL for accessing the API.",
+            "type": "string",
+            "format": "uri"
+          },
+          "pollingInterval": {
+            "description": "Interval in milliseconds for querying the API.",
+            "type": "integer"
+          },
+          "dataType": {
+            "description": "Type of data returned by the API. Expected to be JSON in this case.",
+            "type": "string",
+            "enum": ["json"]
+          }
+        },
+        "required": ["name", "url", "dataType"]
+      }
+    },
+    "inputData": {
+      "description": "Definition of how to map data obtained from external APIs.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "dataMapping": {
+            "description": "Mapping of data keys from the API to specific properties.",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "automationRules": {
+      "description": "Rules for automation based on the obtained data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Unique identifier of the rule.",
+            "type": "string"
+          },
+          "trigger": {
+            "description": "The condition that triggers the rule.",
+            "type": "object",
+            "properties": {
+              "type": {
+                "description": "Type of trigger (external data or time).",
+                "type": "string",
+                "enum": ["externalData", "time"]
+              },
+              "apiName": {
+                "description": "Name of the API from which the data is derived (if type is 'externalData').",
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              },
+              "condition": {
+                "description": "Type of comparison for triggering the rule (equals, not equals, greater than, less than).",
+                "type": "string",
+                "enum": ["equals", "notEquals", "greaterThan", "lessThan"]
+              },
+              "value": {
+                "description": "Value to compare with the key from external data.",
+                "type": ["string", "number"]
+              },
+              "timeWindow": {
+                "description": "Time window for triggering the rule.",
+                "type": "object",
+                "properties": {
+                  "inCurrentTime": {
+                    "type": "boolean"
+                  },
+                  "timeLimit": {
+                    "description": "Time limit in milliseconds for triggering the rule.",
+                    "type": "integer"
+                  }
+                },
+                "required": ["inCurrentTime", "timeLimit"]
+              }
+            },
+            "required": ["type", "condition", "value"]
+          },
+          "action": {
+            "description": "Action to be taken once the condition is met.",
+            "type": "object",
+            "properties": {
+              "deviceType": {
+                "description": "Type of device (light, plug) to be controlled.",
+                "type": "string",
+                "enum": ["light", "plug"]
+              },
+              "deviceId": {
+                "description": "Identifier of the device to be controlled.",
+                "type": "string"
+              },
+              "state": {
+                "description": "State to which the device should be set.",
+                "type": "object",
+                "properties": {
+                  "on": {
+                    "description": "Switch to turn the device on or off.",
+                    "type": "boolean"
+                  },
+                  "bri": {
+                    "description": "Brightness of the light from 0 to 255.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "hue": {
+                    "description": "Hue color of the light.",
+                    "type": "integer"
+                  }
+                },
+                "required": ["on"]
+              }
+            },
+            "required": ["deviceType", "deviceId", "state"]
+          }
+        },
+        "required": ["id", "trigger", "action"]
+      }
+    },
+    "groups": {
+      "description": "Groups of devices for easier management and control.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Name of the group of devices.",
+            "type": "string"
+          },
+          "localTime": {
+            "description": "Local time in date-time format.",
+            "type": "string",
+            "format": "date-time"
+          },
+          "devices": {
+            "description": "List of devices belonging to the group.",
+            "type": "object",
+            "properties": {
+              "lights": {
+                "description": "List of lights in the group.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "plugs": {
+                "description": "List of plugs in the group.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "type": {
+            "description": "Type of space, e.g., 'room' or 'living room'.",
+            "type": "string"
+          }
+        },
+        "required": ["name", "localTime"]
+      }
+    }
+  },
+  "required": ["hueBridge", "externalApis", "inputData", "automationRules", "groups"]
+}

@@ -1,0 +1,110 @@
+{
+  "1": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "hue": 40000,
+      "sat": 254,
+      "effect": "none",
+      "xy": [
+        0.1587,
+        0.2631
+      ],
+      "ct": 153,
+      "alert": "select",
+      "colormode": "hs",
+      "mode": "homeautomation",
+      "reachable": false
+    },
+    "swupdate": {
+      "state": "installing",
+      "lastinstall": "2023-11-01T19:49:27"
+    },
+    "type": "Extended color light",
+    "name": "Hue color lamp 1",
+    "modelid": "LCA008",
+    "manufacturername": "Signify Netherlands B.V.",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 200,
+        "maxlumen": 1680,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [
+            0.6915,
+            0.3083
+          ],
+          [
+            0.17,
+            0.7
+          ],
+          [
+            0.1532,
+            0.0475
+          ]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "tableshade",
+      "function": "mixed",
+      "direction": "omnidirectional",
+      "startup": {
+        "mode": "safety",
+        "configured": true
+      }
+    },
+    "uniqueid": "00:17:88:01:0c:fb:fb:fd-0b",
+    "swversion": "1.76.11",
+    "swconfigid": "BE6E1240",
+    "productid": "Philips-LCA008-1-A67ECLv1"
+  },
+  "2": {
+    "state": {
+      "on": true,
+      "alert": "select",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "installing",
+      "lastinstall": "2023-11-01T19:49:28"
+    },
+    "type": "On/Off plug-in unit",
+    "name": "Hue smart plug 1",
+    "modelid": "LOM008",
+    "manufacturername": "Signify Netherlands B.V.",
+    "productname": "Hue smart plug",
+    "capabilities": {
+      "certified": true,
+      "control": {},
+      "streaming": {
+        "renderer": false,
+        "proxy": false
+      }
+    },
+    "config": {
+      "archetype": "plug",
+      "function": "functional",
+      "direction": "omnidirectional",
+      "startup": {
+        "mode": "powerfail",
+        "configured": true
+      }
+    },
+    "uniqueid": "00:17:88:01:0c:a8:4a:0f-0b",
+    "swversion": "1.76.11",
+    "swconfigid": "A6BC66EA",
+    "productid": "Philips-LOM008-1-SPPIUv2"
+  }
+}
